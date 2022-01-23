@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>FlexBox_4</title>
+
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<!-- Оболочка -->
+		<div class="wrapper">
+			<div class="content">
+				<div class="hi">
+					<div class="container">
+						<div class="hi__row">
+							<div class="hi__body">
+								<div class="hi__title">Pudge</div>
+								<ul class="hi__list">
+									<li>Meat Hook</li>
+									<li>Rot</li>
+									<li>Flesh Heap</li>
+									<li>Dismember</li>
+								</ul>
+							</div>
+							<div class="hi__image">
+								<img src="img/dota-2-pudge-myasnik-pudzh-kryuk.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="what">
+					<div class="container">
+						<div class="what__row">
+							<div class="what__image">
+								<img class="image2" src="img/Pudge_icon.png" alt="">
+							</div>
+							<div class="what__body">
+								<!--Добавочный title, т.к его свойства анологичны заголовкам, которые будут в других блоках!!! -->
+								<div class="what__title title">Биография Pudge</div>
+								<div class="what__text">
+									<p>На полях Вечной бойни, далеко на юге от Квойджа, тучная фигура упорно трудится под покровом ночи — убирает, а затем расчленяет, потрошит, сгружает в кучи конечности и внутренние органы павших. И все это лишь для того, чтобы на следующее утро бойня могла повториться. В том проклятом мире ничто не разлагается само по себе — мертвецам никогда не суждено вернуться обратно в землю, и не важно, насколько глубока могила. Окруженный стаями птиц-падальщиков, которым нужны порезанные кусочки трупов, мясник Pudge упражняется с лезвиями, которые затачиваются от резки трупов. Вжик-вжик-тух. Плоть отсекается от костей, связки и сухожилия отрываются как кусочки мокрой бумаги. И хоть у Pudge всегда было пристрастие к мясницкому ремеслу, со временем тучный здоровяк полюбил и то, что получается, когда он заканчивает работу над трупом. Сначала кусочек мускула там, глоточек крови... Вскоре Pudge уже вгрызался в тела самых крепких существ подобно грызущей кость собаке. Даже те, кто не питает страха перед жнецом Смерти, предпочитают не связываться с мясником.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="columns">
+					<div class="container">
+						<!-- Вот как раз всплывает title -->
+						<div class="columns__title title">Колонки про пуджа</div>
+						<div class="columns__row">
+							<div class="columns__column">
+								<div class="columns__item item">
+									<div class="item__row">
+										<div class="item__image">
+											<img src="img/image_126.png" alt="">
+										</div>
+										<div class="item__body">
+											<div class="item__title">The description for the image</div>
+											<div class="item__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns__column">
+								<div class="columns__item item">
+									<div class="item__row">
+										<div class="item__image">
+											<img src="img/image_126.png" alt="">
+										</div>
+										<div class="item__body">
+											<div class="item__title">The description for the image</div>
+											<div class="item__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns__column">
+								<div class="columns__item item">
+									<div class="item__row">
+										<div class="item__image">
+											<img src="img/image_126.png" alt="">
+										</div>
+										<div class="item__body">
+											<div class="item__title">The description for the image</div>
+											<div class="item__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns__column">
+								<div class="columns__item item">
+									<div class="item__row">
+										<div class="item__image">
+											<img src="img/image_126.png" alt="">
+										</div>
+										<div class="item__body">
+											<div class="item__title">The description for the image</div>
+											<div class="item__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="friends">
+					<div class="container">
+						<div class="friends__title title">Братики Pudge</div>
+						<!-- body нжуен, чтобы ограничить контентую часть по ширине, т.к. она меньше чем container -->
+						<div class="friends__body">
+							<div class="friends__row">
+								<!-- friends__column1 для того чтобы можно было применить такие свойства flex, как: oreder и align-self  -->
+								<div class="friends__column friends__column1">
+									<div class="friends__item">
+										<div class="friends__subtitle">Герой</div>
+										<div class="friends__label">Techies</div>
+										<div class="friends__text">
+											<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Animi, quo? Accusamus nobis pariatur blanditiis animi quaerat! Id labore iure neque sit consequatur dolor iste et commodi veniam, accusantium minus deleniti.</p>
+											<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Animi, quo? Accusamus nobis pariatur blanditiis animi quaerat! Id labore iure neque sit consequatur dolor iste et commodi veniam, accusantium minus deleniti.</p>
+										</div>
+										<a target="_blank_" href="https://dota2.fandom.com/ru/wiki/Techies" class="friends__buttom">Просмотр</a>
+									</div>
+								</div>
+								<div class="friends__column friends__column2">
+									<div class="friends__item">
+										<div class="friends__subtitle">Герой</div>
+										<div class="friends__label">Juggernaut</div>
+										<div class="friends__text">
+											<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Animi, quo? Accusamus nobis pariatur blanditiis animi quaerat! Id labore iure neque sit consequatur dolor iste et commodi veniam, accusantium minus deleniti.</p>
+											<p>Рундук - сундук для рун, рундук.</p>
+										</div>
+										<a target="_blank_" href="https://dota2.fandom.com/ru/wiki/Juggernaut" class="friends__buttom">Просмотр</a>
+									</div>
+								</div>
+								<div class="friends__column friends__column3">
+									<div class="friends__item">
+										<div class="friends__subtitle">Герой</div>
+										<div class="friends__label">Legion Commander</div>
+										<div class="friends__text"> Pudge, я дерусь - ты обедаешь.</div>
+										<a target="_blank_" href="https://dota2.fandom.com/wiki/Legion_Commander" class="friends__buttom">Просмотр</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__row">
+						<div class="footer__text"> Все права защищены пуджом.</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+	</html>

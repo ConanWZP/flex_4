@@ -1,0 +1,397 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@font-face {
+  font-family: 'PFDinTextCondPro';
+  src: url("../fonts/pfdintextcondpro-regular.eot");
+  src: local("☺"), url("../fonts/pfdintextcondpro-regular.woff") format("woff"), url("../fonts/pfdintextcondpro-regular.ttf") format("truetype"), url("../fonts/pfdintextcondpro-regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFDinTextCondPro';
+  src: url("../fonts/pfdintextcondpro-medium.eot");
+  src: local("☺"), url("../fonts/pfdintextcondpro-medium.woff") format("woff"), url("../fonts/pfdintextcondpro-medium.ttf") format("truetype"), url("../fonts/pfdintextcondpro-medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+.wrapper {
+  /* Чтобы все отображалось и ничего не пропадало */
+  min-height: 100%;
+  overflow: hidden;
+  /* Для активации flex: 1 1 auto; в content */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+@media (max-width: 1180px) {
+  .container {
+    max-width: 970px; } }
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px; } }
+
+@media (max-width: 767px) {
+  .container {
+    max-width: none; } }
+
+.content {
+  /* Позволяет увеличиваться контенту и прижимает футер к низу страницы */
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
+
+.hi {
+  background-color: #445162;
+  padding: 50px 0; }
+  .hi__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .hi__body {
+    color: #fff;
+    /* <-- Нужен чтобы, если текста будет много, то он не налезет на картинку -->*/
+    padding: 0 30px 0 0; }
+  .hi__title {
+    font-size: 60px;
+    line-height: 1.2;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+    margin: 0 0 38px 0; }
+  .hi__list li {
+    font-size: 20px;
+    line-height: 36px;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+    padding: 0 0 0 36px; }
+    .hi__list li:nth-child(1) {
+      background: url("../img/icons/Meat_Hook_icon.png") 0 7px/20px 20px no-repeat; }
+    .hi__list li:nth-child(2) {
+      background: url("../img/icons/Rot_icon.png") 0 7px/20px 20px no-repeat; }
+    .hi__list li:nth-child(3) {
+      background: url("../img/icons/Flesh_Heap_icon.png") 0 7px/20px 20px no-repeat; }
+    .hi__list li:nth-child(4) {
+      background: url("../img/icons/Dismember_icon.png") 0 7px/20px 20px no-repeat; }
+  .hi__image {
+    position: relative;
+    overflow: hidden;
+    padding: 0 20%;
+    margin: 0 20px; }
+  .hi__image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+/* 
+.image1{
+		max-width: 100%
+		width: 470px;
+		max-height: 215px;
+		min-width: 0px;
+		min-height: 0px;
+		}
+	}
+
+*/
+.footer {
+  background-color: #f5f5f5; }
+  .footer__row {
+    height: 65px;
+    /* Чтобы выравнять текст по центру */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .footer__text {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    color: #445162; }
+
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #445161; }
+
+.what__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0; }
+
+.what__image {
+  /* Запрещаем блоку с картинкой менять размер и выставляем его размер в 430px*/
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 430px;
+  flex: 0 0 430px; }
+  .what__image .image2 {
+    /* Если картинка больше 430px, то она уменьшится */
+    max-width: 100%;
+    /* Если картинка больше 430px, то она увеличится */
+    min-width: 100%; }
+
+.what__body {
+  /* Разрешаем блоку изменять размеры */
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0 0 0 38px; }
+
+.what__title {
+  margin: 0 0 36px 0; }
+
+.what__text p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333; }
+
+.columns {
+  background-color: #f5f5f5;
+  padding: 50px 0 20px 0; }
+  .columns__title {
+    text-align: center;
+    margin: 0 0 30px 0; }
+  .columns__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* Чтобы отступ между боковыми колонками был в 16px*/
+    margin: 0 -8px; }
+  .columns__column {
+    /* Чтобы отступ между боковыми колонками был в 16px*/
+    padding: 0 8px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    margin: 0 0 30px 0; }
+
+.item__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.item__image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 200px;
+  flex: 0 0 200px; }
+
+.item__body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0 0 0 15px; }
+
+.item__title {
+  font-size: 24px;
+  line-height: 30px;
+  color: #445161;
+  margin: 0 0 15px 0; }
+
+.item__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333; }
+
+.friends {
+  padding: 50px 0; }
+  .friends__title {
+    text-align: center;
+    margin: 0 0 29px 0; }
+  .friends__body {
+    max-width: 990px;
+    margin: 0 auto;
+    min-width: 0px; }
+  .friends__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* Чтобы задать расстояние между колонками в 45px */
+    margin: 0 -22.5px;
+    /*flex-wrap: wrap; */ }
+  .friends__column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 33.333%;
+    flex: 0 1 33.333%;
+    /* Чтобы задать расстояние между колонками в 45px */
+    padding: 0 22.5px;
+    /* Делает колонки размером как самая большая колонка */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .friends__column1 {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3; }
+  .friends__column2 {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; }
+  .friends__column3 {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; }
+  .friends__item {
+    background-color: #445162;
+    color: #fff;
+    border-radius: 5px;
+    /* border нужен т.к. имя персонажа на белом фоне имеет маленький отступ от границы item */
+    border: 1px solid #445162;
+    padding: 0 0 20px 0;
+    /* Первый шаг чтобы нижнии кнопки "Просмотр" прижались к низу*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .friends__subtitle {
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 18px 0 12px 0; }
+  .friends__label {
+    text-align: center;
+    font-size: 40px;
+    line-height: 30px;
+    color: #445162;
+    background-color: #fff;
+    padding: 25px 0 19px 0; }
+  .friends__text {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 19px 30px 23px 20px;
+    /* Второй шаг чтобы нижнии кнопки "Просмотр" прижались к низу*/
+    /* Текст как бы прижимает кнопку просмотр к низу блока */
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; }
+    .friends__text p {
+      margin: 0 0 15px 0; }
+    .friends__text p:last-child {
+      margin: 0px; }
+  .friends__buttom {
+    display: block;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #445161;
+    background-color: #fff;
+    height: 40px;
+    text-align: center;
+    margin: 0 20px;
+    border-radius: 5px; }
+
+@media (max-width: 767px) {
+  .friends__row {
+    margin: 0 -10px; } }
+
+@media (max-width: 767px) {
+  .friends__column {
+    padding: 0 10px; } }
+
+@media (max-width: 680px) {
+  .friends__row {
+    margin: 0 -2px; } }
+
+@media (max-width: 680px) {
+  .friends__column {
+    padding: 0 2px; } }
+
+@media (max-width: 620px) {
+  .friends__row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+
+@media (max-width: 620px) {
+  .friends__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%; } }
